@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url(../static/images/background-line-abstract-gradient-colorful-style_483537-2550.jpg);
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            
+            color: rgb(4, 81, 69);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h3 {
+            margin: 0;
+        }
+
+        .links {
+            display: flex;
+        }
+
+        .links a {
+            color: rgb(11, 107, 89);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .links a:hover {
+            color: #ffc107;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        footer {
+            color: rgb(14, 98, 69);
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        h3{
+            padding-right: 20px;
+        }
+        button{
+            background-color: rgb(10, 181, 93);
+            border: none;
+            padding: 5px;
+            color:#fff;
+            border-radius: 5px;
+            width: 80px;
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <h3>MES Mampad College</h3>
+        </div>
+        <div class="links">
+            <div><a href="/about"><h3>ABOUT</h3></a></div>
+            <div><a href="/contact"><h3>CONTACT</h3></a></div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1>Leave Requests</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Student</th>
+                    <th>Department</th>
+                    <th>Reason</th>
+                    <th>Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for approve_leave in leaves %}
+                <tr>
+                    <td>{{ approve_leave.student.username }}</td>
+                    <td>{{ approve_leave.student.department }}</td>
+                    <td>{{ approve_leave.reason }}</td>
+                    <td>{{ approve_leave.date }}</td>
+                    <td>
+                        <form action="{% url 'approve_leave' approve_leave.student.username  %}" method="post">
+                            {% csrf_token %}
+                            <button type="submit" value="Approved">Approve</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MES Mampad College. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

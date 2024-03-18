@@ -1,0 +1,563 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif !important;
+}
+.home{
+    width: 100%;
+   
+}
+.std-log{
+    background-image: url(../images/bk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.teacher-log{
+   background-image: url(../images/ccc.jpg);
+   background-size: cover;
+   height: 630px;
+    
+}
+.teacher-sign{
+    background-image: url(../images/111.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.condiner{
+    display: flex;
+    justify-content: center;
+}
+
+.child{
+    background-color: rgb(249, 249, 249);
+    width: 50%;
+    height: 0;
+}
+.child-primery{
+    width: 50%;
+    height: 0;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    padding-inline-start:13rem ;
+ 
+}
+.child-text p{
+font-size: 27px;
+text-transform: capitalize;
+color: rgb(12, 12, 59);
+font-weight: 600;
+font-family: sans-serif;
+margin-top: 1rem;
+}
+
+.child-text h3{
+    margin-top: 8rem;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(94, 94, 96);
+    text-transform: capitalize;
+    opacity: .7;
+    
+}
+.child-text h1{
+
+   font-size: 85px;
+   color: rgb(235, 235, 235);
+   text-transform: uppercase; 
+   margin-left: 8px;
+}
+.child-text h4{
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(94, 94, 96);
+    margin-top: 10px;
+    line-height: 35px;
+    text-transform: capitalize; 
+    opacity: .6;
+}
+.child-secondry{
+ width: 100%;
+ height: 0;
+ position: relative;
+
+
+}
+.child-secondry img{
+    width: 100%;
+    position: relative;
+}
+.action{
+    position: absolute;
+    width: 50%;
+    height: 0;
+}
+.validation{
+    background-color: rgb(12, 12, 59) !important;
+    width:55% ;
+    margin-left: 105px;
+    height: 500px !important;
+    color: white;
+    margin-top: 5rem;
+}
+.validation-log{
+    background-color: rgb(5, 91, 104);
+    width:65% ;
+    margin-left: 135px;
+    height: auto;
+    color: white;
+    margin-top: 7rem;
+    border-radius: 20px;
+}
+.valida-input {
+padding: 4rem;
+}
+.valida-input p {
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+input{
+    color: aliceblue;
+    
+    padding: 10px;
+    width: 250px;
+    border: solid 1px rgb(155, 155, 157);
+    background-color: transparent;
+    border-radius: 2px;
+}    
+.in{
+    display: flex;
+    gap: 10px;
+   margin-top: 1rem;
+
+}
+::placeholder{
+    color: rgb(213, 213, 222);
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family:sans-serif;
+   
+}
+.em input{
+    margin-top: 1rem;
+    width: 350px;
+}
+
+.btn  {
+    
+    /* margin-top: 3rem; */
+    text-align: center;
+
+}
+.btn button{
+    border-radius: 3px;
+    font-size: 17px;
+    padding: 10px;
+    font-weight: 600;
+    width: 250px;
+    border: 1px solid color rgb(106, 106, 108);
+    color: rgb(12, 12, 59) ;
+}
+li  {
+   list-style: none;
+   
+}
+ul{
+    display: flex;
+    gap: 25px;
+    font-size: 20px;
+   font-weight: 600;
+    padding-inline-start: 14rem;
+    margin-top: 14px;
+   text-transform: capitalize;
+    font-family: sans-serif;
+}
+li button{
+    width: 80px;
+    padding: 4px;
+    border-radius: 2px;
+    font-size: 15px;
+    text-transform: capitalize;
+    background: transparent;
+    border: solid 1.5px rgb(12, 12, 59) ;
+}
+.lg{
+display: grid ;
+gap: 1rem;
+
+}
+.lg input{
+width: 250px;
+margin: auto;
+}
+.login-input{
+    padding: 4rem;
+    text-align: center;
+}
+.login-input p{
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+
+}
+
+/* staffflogin */
+.validation-stff-log{
+    background-color: rgb(19, 123, 109);
+    margin-top: 7rem;
+    padding: 10px;
+    border-radius: 20px;
+   
+}
+.validation-stff-log p{
+    color: white;
+    
+}
+.staff-action{
+    position: absolute;
+    width: 50%;
+    height: 0;
+     color: rgb(186, 165, 165);}
+   
+
+.child-action button{
+border: 1px solid white;
+color: rgb(188, 188, 188);
+}
+.staff-child-text h3{
+    font-size: 27px;
+    text-transform: capitalize;
+    color: rgb(66, 37, 9);;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-top: 1rem;
+}
+.stlg{
+        display: grid;
+        gap: 1rem;
+}
+
+.stlg input{
+ border: 1px solid rgb(222, 215, 215);
+}
+
+
+/* staff validation */
+.validation-stff-singn{
+    background-color: rgb(79, 43, 9);
+    padding: 35px;
+    margin-top: 4rem;
+    width: 100%;
+    margin-left: -105px;
+   
+}
+
+.eh input{
+ width: 405px;
+}
+.stf-input input{
+   
+    border: 1px solid rgb(222, 215, 215);
+    margin-bottom: 1rem;
+}
+.stf-input ::placeholder{
+    color: rgb(216, 209, 209);
+
+}
+.ii{
+    display: flex;
+    gap: 10px;
+}
+.stff-sighn p{
+    font-size: 31px;
+    text-transform: capitalize;
+    color: rgb(234, 229, 224);;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+
+/* home */
+.home-condiner{
+   width: 100%; 
+  
+  
+
+}
+.home-primery{
+    width: 100%;
+    display: flex;
+ 
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10rem;}
+   
+.home-primery img{
+    
+    width: 100%;
+    /* height: 630px; */
+    
+   
+    
+}
+.nev-bar{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    padding-inline: 7rem;
+    margin-top: .5rem;
+    /* background: #ffffff; */
+}
+  
+
+.nav-child p{
+font-family: sans-serif;
+font-size: 18px;
+font-weight: 600;
+margin-top: 15px;
+color: rgb(255, 255, 255);
+text-transform: capitalize;
+
+}
+.nev-items{
+    margin-top: 15px;
+}
+
+.nev-items li{
+color: rgba(0, 0, 0, 0.847);
+font-size: 16px;
+font-family: sans-serif;
+
+}
+.nev-items li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.nev-items li a:hover{
+    color: rgb(255, 2, 2);
+}
+
+.main-btn button{
+   
+    font-size: 20px;
+    width: 150px;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+     font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 2, 2);
+}
+.center-content{
+    position: absolute;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    margin-top: 20.5rem !important;
+ 
+}
+.main-btn {
+    margin: auto;
+    text-align: center;
+    
+}
+.center-content h2{
+    font-size: 65px;
+    text-transform: capitalize;   
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+.center-content h3{
+    font-size: 47px;
+    text-transform: capitalize;   
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+
+/* staff details */
+select{
+    width: 250px;
+    height: 42px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.735);
+    font-size: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.858);
+}
+
+option{
+    background-color: rgba(72, 37, 8, 0.167);
+    color: black;
+    font-size: 16px;
+    text-transform: capitalize;
+    
+    
+}
+input::file-selector-button{
+    color:rgba(255, 255, 255, 0.735) ;
+    background: transparent;
+    border: 1px solid rgba(247, 247, 247, 0.735);
+}
+.zn input{
+    width: 411px;
+}
+.singn-details{
+    background-color: rgba(99, 25, 25, 0.836);
+    padding: 40px;
+    margin-top: 4rem;
+    width: 80%;
+    margin-left: 25px;
+    border-radius: 10px;
+   
+   
+}
+.singn-details p{
+font-family: sans-serif;
+font-size: 30px;
+font-weight: 700;
+color: rgb(255, 255, 255);
+text-transform: capitalize;
+margin-bottom: 3rem;
+
+
+}
+
+.bg-image img{
+    width: 100%;
+   
+   
+    
+
+}
+.bg-image{
+    width: 100%;
+    position: relative;
+    display: flex;
+   
+    
+}
+.parent{
+    position: absolute;
+    display: flex;
+    
+    
+}
+.parent-child{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+
+}
+ .staff-child-text h3, p{
+    margin-left: 1rem;
+
+
+}
+
+table {
+    border-collapse:collapse !important;
+   width: 100%;
+  
+   
+
+}
+
+a {
+    text-decoration: none;
+}
+
+td,
+th {
+    border: 1px solid rgba(237, 235, 235, 0.632);
+    text-align: center;
+    padding: 15px;
+    font-family: sans-serif;
+   
+}
+
+th {
+    background-color: rgba(104, 9, 9, 0.799);
+    color: rgb(242, 241, 241);
+    text-transform: capitalize;
+    
+}
+
+td {
+    background-color: rgba(22, 22, 148, 0.313);
+}
+.sing-child-primery{
+    border: 1px solid rgb(223, 210, 210);
+    width: 100%;
+    height: 0;
+}
+
+
+
+
+body{
+    margin: 0;
+  }
+  
+  h1{
+    color:#fff;
+  }
+  
+  .bg-opacity{
+      position: relative;
+      background-color: #000;
+  }
+  
+  .bg-opacity::before{
+      content: ' ';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 640px;
+      z-index: 0;
+      opacity: 0.4;
+      background:  url("../images/university-melbourne-is-located-heart-city_1340-45716.jpg") no-repeat center center;
+      background-size: cover;
+  }
+  
+  .content{
+    position: relative;
+    width: 100%;
+    height: 640px;
+  }
+   
+
+.wrong{
+    font-size: 12px !important;
+    color: rgb(0, 255, 47);
+    padding-top: 20px;
+}
+.valid{
+    background-color: rgb(12, 12, 59) !important;
+    width:55% ;
+    margin-left: 105px;
+    height: 500px !important;
+    color: white;
+    margin-top: 5rem;
+}
+
+.reg-link{
+    margin-top: 20px;
+    font-size: 16px;
+    color: #fff;
+}
+.reg-link a{
+    color: rgb(115, 255, 0);
+}

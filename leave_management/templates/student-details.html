@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MES Mampad College</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: url(../static/images/dark-green-wall-shadow-background-with-flower_53876-119873.jpg);
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        nav {
+            
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .links {
+            display: flex;
+        }
+
+        .links div {
+            margin-left: 20px;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .links a:hover {
+            color: #ffc107;
+        }
+
+        .container {
+            max-width: 550px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #ffffff35;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .stddetails {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .detail1,
+        .detail2 {
+            flex: 1;
+        }
+
+        label {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .buttons div {
+            flex: 1;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        h1{
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <h3>MES Mampad College</h3>
+        </div>
+        <div class="links">
+            <div><a href="/about">ABOUT</a></div>
+            <div><a href="/contact">CONTACT</a></div>
+            <div><a href="/student_logout/">LOGOUT</a></div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>STUDENT DETAILS</h1>
+        <div class="stddetails">
+            <div class="detail1">
+                <label for="">Firstname: {{ std.firstname }}</label>
+                <label for="">Username: {{ std.username }}</label>
+                <label for="">Age: {{ std.age }}</label>
+                <label for="">Department: {{ std.department }}</label>
+            </div>
+            <div class="detail2">
+                <label for="">Lastname: {{ std.lastname }}</label>
+                <label for="">Email: {{ std.email }}</label>
+                <label for="">Phonenumber: {{ std.phonenumber }}</label>
+                <label for="">Address: {{ std.address }}</label>
+            </div>
+        </div>
+        <div class="buttons">
+            <div>
+                <a href="{% url 'update' pk=std.id %}"><button>Update</button></a>
+            </div>
+            <div>
+                <a href="/stdpage"><button>&#129060; &nbsp; Back</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

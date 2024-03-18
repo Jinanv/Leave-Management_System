@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body class="std-log">
+    
+      
+    <div class="home">
+        <div class="condiner">
+            <div class="child-primery">
+                 
+            </div>
+
+            <!-- <secont div> -->
+            <div class="child">
+                
+                <div class="action">
+                    <div>
+                        <ul>
+                            <li> <a href="\">Home</a></li>
+                            <li> <a href="\about">About</a> </li>
+                            <li> <a href="\contact"> Contact</a></li>
+                            <li> <a href="\studentsignup"> Sign Up</a></li>
+    
+                    
+                         
+                        </ul>
+                    </div>
+                    <div class="validation-log">
+                        <div class="login-input ">
+                           
+                        <p>Login  here</p>
+
+
+                        <form action="/studentlog" method="POST" enctype="multipart/form-data">
+                            {% csrf_token %}
+
+                        
+                            
+                            <div class="lg">
+                                
+                                <input type="text" name="username" placeholder="username">
+                                <input type="text" name="password" placeholder="password">
+                            </div>
+
+                           <P class="wrong">{{wrong}}</P>
+
+                           
+                            <div  class=" btn">
+                                <a href="\welcome"><button>Submit</button></a>
+                            </div>
+                            <div class="reg-link">Not a Member ? <span> <a href='\studentsignup'>Sign up Here</a></span></div>
+                            
+                        </form>
+                        
+
+
+
+                        </div>
+                        
+                    </div>
+               </div>
+
+               
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

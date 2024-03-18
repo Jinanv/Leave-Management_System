@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ABC School</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url(../static/images/free-time-students-bachelor-s-campus-life-rhythm-five-friendly-students-are-walking_8353-6408.avif);
+            background-size: cover;
+            color: #333;
+        }
+
+        nav {
+            
+            color: rgb(16, 0, 0);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            margin: 0;
+        }
+
+        .links {
+            display: flex;
+        }
+
+        .links div {
+            margin-left: 20px;
+        }
+
+        .links a {
+            color: rgb(19, 1, 1);
+            text-decoration: none;
+        }
+        h3{
+            padding-right: 20px;
+        }
+
+        .contents {
+            max-width: 1000px;
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            gap: 20px;
+            margin-left: 120px;
+            margin-top: 50px;
+        }
+
+        .content {
+            flex: 1;
+            background-color: #ffffff90;
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form {
+            flex: 1;
+            background-color: #ffffff7b;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .contact-form input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            margin-top: 100px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 20px;
+        }
+        h1{
+            padding-bottom: 30px;
+        }
+        p{
+            font-size: 15px;
+            line-height: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <h2>MES Mampad College</h2>
+        </div>
+        <div class="links">
+            <div><a href="/about">
+                    <h3>ABOUT</h3>
+                </a></div>
+            <div><a href="/">
+                    <h3>HOME</h3>
+                </a></div>
+        </div>
+    </nav>
+
+    <div class="contents">
+        <div class="content">
+            <h1>MES Mampad College</h1>
+            <p>If you have any questions, feedback, or inquiries, <br>please feel free to contact us using the details
+                below:
+            </p>
+            <p>Email: mesmampad@gmail.com</p>
+            <p>Phone: +1234567890</p>
+            <p>Address: Mampad,Kerala</p>
+            <p>Location: <a
+                    href="https://maps.app.goo.gl/QnUnhwV7B4MfoPa38">https://maps.app.goo.gl/QnUnhwV7B4MfoPa38</a>
+            </p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="\" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" class="email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Inquiry">
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+    <p>&copy; 2024 Mampad College. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

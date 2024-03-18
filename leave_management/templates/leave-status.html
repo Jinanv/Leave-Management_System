@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url(../static/images/simple-green-gradient-background-vector-business_53876-171637.jpg);
+            background-size: cover;
+        }
+
+        nav {
+            padding: 20px;
+        
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            margin: 0;
+        }
+
+        .links {
+            display: flex;
+        }
+
+        .links a {
+            color: rgb(33, 30, 30);
+            text-decoration: none;
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: 13px;
+            transition: color 0.3s ease;
+            
+        }
+
+        .links a:hover {
+            color: #ffc107;
+        }
+
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        h3{
+            padding-right: 20px;
+            color: #000;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div>
+            <h3>MES Mampad College</h3>
+        </div>
+        <div class="links">
+            <div><a href="/about"><h3>ABOUT</h3></a></div>
+            <div><a href="/contact"><h3>CONTACT</h3></a></div>
+        </div>
+    </nav>
+
+    <div>
+        <table border="1">
+            <tr>
+                <th>Reason</th>
+                <th>Date</th>
+                <th>Status</th>
+            </tr>
+
+            {% for i in leaves %}
+            <tr>
+                <td>{{ i.reason }}</td>
+                <td>{{ i.date }}</td>
+                <td>{{ i.status }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+
+</html>

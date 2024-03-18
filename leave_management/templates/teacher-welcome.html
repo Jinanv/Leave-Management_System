@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url(../static/images/international-students-day-young-cute-girl-red-checked-shirt-with-pen-notebook_140725-162178.jpg);
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            margin: 0;
+        }
+
+        .links {
+            display: flex;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 15px;
+        }
+        h3{
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 80px ;
+            padding: 20px;
+            background-color: #ffffff43;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #363232;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: aliceblue;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <h3>MES Mampad College</h3>
+        </div>
+        <div class="links">
+            <div><a href="/about"><h3>ABOUT</h3></a></div>
+            <div><a href="/contact"><h3>CONTACT</h3></a></div>
+            <div><a href="/teacher_logout/"><h3>LOGOUT</h3></a></div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Welcome {{ username }}!</h1>
+        <p>The teacher dashboard in a Django-based leave management system offers a centralized platform for teachers to
+            handle leave requests efficiently. It provides an overview of pending requests, allows filtering and search,
+            enables quick approval or rejection of requests, displays detailed request information, includes a calendar
+            view for scheduling, sends notifications, offers reporting and analytics, facilitates user management,
+            allows customization, and ensures secure access.</p>
+        <div class="buttons">
+            <div><a href="/viewstd"><button>View Students</button></a></div>
+            <div><a href="/viewreq"><button>View Requests</button></a></div>
+        </div>
+    </div>
+</body>
+
+</html>

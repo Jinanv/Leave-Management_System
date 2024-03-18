@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url(../static/images/white-background-gradient-modern-abstract-design-wave_343694-2337.jpg);
+            background-size: cover;
+        }
+
+        nav {
+            color: rgb(14, 0, 0);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    
+        h4{
+            padding-right: 20px;
+        }
+        .links {
+            display: flex;
+        }
+
+        .links a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .links a:hover {
+            color: #ffc107;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #ffffffad;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        button,
+        .back {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .back {
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+        }
+
+        button:hover,
+        .back:hover {
+            background-color: #0056b3;
+        }
+
+        .back:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div>
+            <h3>MES Mampad College</h3>
+        </div>
+        <div class="links">
+            <div><a href="/about"><h4>ABOUT</h4></a></div>
+            <div><a href="/contact"><h4>CONTACT</h4></a></div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <form method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+ 
+            <div class="buttons">
+                <div><button type="submit">Apply</button></div>
+                <div><a href="/stdpage" class="back">&#129060; Back</a></div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
